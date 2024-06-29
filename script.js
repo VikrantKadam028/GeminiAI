@@ -7,7 +7,7 @@ const sideNavigation = document.querySelector(".sideNavigation"),
   startContent = document.querySelector(".startContent"),
   chatContent = document.querySelector(".chatContent"),
   results = document.querySelector(".results"),
-  location = document.querySelector(".location");
+  locationdiv = document.querySelector(".location");
   
 promptQuestions = [
   {
@@ -46,7 +46,7 @@ window.addEventListener("load", () => {
 
 sideBarToggle.addEventListener("click", () => {
   sideNavigation.classList.toggle("expandClose");
- location.style.display = "none;
+  locationdiv.style.display = "none";
 });
 
 inputArea.addEventListener("keyup", (e) => {
