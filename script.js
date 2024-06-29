@@ -7,8 +7,8 @@ const sideNavigation = document.querySelector(".sideNavigation"),
   startContent = document.querySelector(".startContent"),
   chatContent = document.querySelector(".chatContent"),
   results = document.querySelector(".results");
-  // location = document.querySelector(".location");
-  // location.style.display = "none";
+  location = document.querySelector(".location");
+  
 promptQuestions = [
   {
     question: "Write a thank you note to my subscribers",
@@ -46,7 +46,7 @@ window.addEventListener("load", () => {
 
 sideBarToggle.addEventListener("click", () => {
   sideNavigation.classList.toggle("expandClose");
- 
+ location.style.display = "none";
 });
 
 inputArea.addEventListener("keyup", (e) => {
